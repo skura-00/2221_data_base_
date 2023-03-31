@@ -1,0 +1,66 @@
+<!-- Name: Sachi Kurata -->
+<!-- Student ID: 100352566 -->
+<!-- Course: CPSC2221 -->
+<!-- Group: 13 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club DB Delete data</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      align-items: center;
+    }
+    label {
+      display: inline-block; 
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    form {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 500px;
+    }
+
+    li {
+      text-decoration: none;
+    }
+    a {
+      color: black;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Delete Data</h1>
+
+<!-- Delete Member -->
+  <form id="student" method="post" action="php/deleteMember.php">
+    <fieldset>
+      <legend>Delete Member</legend><br />
+      <label>Student ID:  </label><input name="stdId" type="number" /><br />
+      <input type="submit" value="submit">
+    </fieldset>
+  </form>
+
+  <a class="home" href="index.html">Go back to home</a>
+  <br /><br />
+  <style>
+    .home {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 20px;
+      background-color: black;
+      margin: 30px;
+      bottom: 50px;
+    }
+  </style>
+</body>
+</html>

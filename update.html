@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club DB Update Data</title>
+  <style>
+    body {
+      align-items: center;
+    }
+    label {
+      display: inline-block; 
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    form {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 700px;
+    }
+
+    li {
+      text-decoration: none;
+    }
+    a {
+      position: absolute;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 20px;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+    <form method="post" action="php/updateMajor.php">
+      <fieldset>
+        <legend>Update Student's Major</legend>
+        <label>Student ID</label> <input type="number" name="stdId" /> <br />
+        <p>Change their major to:</p>
+        <select name="mjr">
+          <option value="CPSC">CPSC</option>
+          <option value="MATH">MATH</option>
+          <option value="ENGL">ENGL</option>
+          <option value="ASIA">ASIA</option>
+        </select>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br/>
+    <form method="post" action="php/updateLName.php">
+      <fieldset>
+        <legend>Update Student's Last name</legend>
+        <label>Student ID</label> <input type="number" name="stdId" /> <br />
+        <p>Change their last name to:</p><input name="lname" type="text">
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+
+    <a href='index.html'>Back to Home</a>
+</body>
+</html>

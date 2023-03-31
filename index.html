@@ -1,0 +1,82 @@
+<!-- Name: Sachi Kurata -->
+<!-- Student ID: 100352566 -->
+<!-- Course: CPSC2221 -->
+<!-- Group: 13 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club DB Home</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+    }
+
+    ul {
+      position: absolute;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    li {
+      text-align: center;
+      width: 250px; 
+      height: 40px;
+      margin: 10px 30px;
+      padding-top: 20px;
+    }
+    li:hover {
+      box-shadow: 3px 7px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .createDB {
+      background-color: #9DD4D1;
+    }
+    .createTable{
+      background-color: #CD9696;
+    }
+    .select {
+      background-color: #C9B58D;
+    }
+    .insert {
+      background-color: #AEC38B;
+    }
+    .delete {
+      background-color: #7BA5AE;
+    }
+    .update {
+      background-color: #B894B0;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Welcome to Club DB!</h1>
+    <ul> 
+      <a href="php/connect.php"><li style="background-color: #FF9356; ">Connect to Database</li></a>
+
+      <a href="php/createDB.php"><li class="createDB">Create Database</li></a>
+
+      <a href="php/createTable.php"><li class="createTable">Create Table</li></a>
+
+      <a href="select.html"><li class="select">Select</li></a>
+      <a href="insert.html"><li class="insert">Insert</li></a>
+      <a href="delete.html"><li class="delete">Delete</li></a>
+      <a href="update.html"><li class="update">Update</li></a>
+
+      <a href="php/drop.php"><li style="background-color:black">Drop table</li></a>
+
+    </ul>
+</body>
+</html>
